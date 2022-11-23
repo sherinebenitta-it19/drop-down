@@ -1,0 +1,10 @@
+<div class="menu-container" clickOutside (clickOutside)="clickOutside()">
+  <div class="menu-toggler" (click)="toggleMenu()">SELECT A ITEM</div>
+  <div class="menu" *ngIf="isMenuOpened">
+    <a routerLink="desk"><div class="menu-item">MOON</div></a>
+    <a routerLink="sample"><div class="menu-item">STAR</div></a>
+    <a routerLink="about"><div class="menu-item">GALAXY</div></a>
+    <a routerLink="currentdate"><div class="menu-item">SKY</div></a>
+    <router-outlet></router-outlet>
+  </div>
+</div>
